@@ -1,4 +1,4 @@
-# EX-16-LEFT-SHIFT-OPERATION
+![image](https://github.com/user-attachments/assets/3834f1f8-8174-494e-9479-7e88b15eb4bd)# EX-16-LEFT-SHIFT-OPERATION
 ## AIM
 To write a C Program to perform the basic left shift operation for 44 integer number with 3 shifts.
 
@@ -10,8 +10,21 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
 
+int main()
+{
+    int a = 44, b = 3, result;
+    result = a << b;
+    printf("Result after left shift: %d", result);
+    return 0;
+}
+
+```
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/f9e930ea-a854-48b5-b29c-3ce05fb5b6ec)
+
 
 
 
@@ -47,9 +60,31 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    printf("Enter two numbers: ");
+    scanf("%d%d", &a, &b);
+    if(a == b)
+    {
+        printf("Both numbers are equal");
+    }
+    else
+    {
+        printf("Both numbers are not equal");
+    }
+    return 0;
+}
+
+```
 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/47f2f1ce-7293-4f44-9781-41d9cf76d6c5)
+
            
 ## RESULT
 
@@ -70,8 +105,33 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+    int i;
+    printf("Enter a string: ");
+    scanf("%s", str);
+    for(i = 0; str[i]; i++)
+    {
+        if(str[i] >= 'A' && str[i] <= 'Z')
+        {
+            str[i] = str[i] + 32;
+        }
+    }
+    printf("Lowercase string: %s", str);
+    return 0;
+}
+
+
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/73e64dc0-c441-423e-8df4-b57b39c3a921)
+
 
 
 
@@ -95,8 +155,31 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int i, count = 1;
+    printf("Enter a string: ");
+    scanf("%[^\n]", str);
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] == ' ')
+        {
+            count++;
+        }
+    }
+    printf("Total number of words: %d", count);
+    return 0;
+}
+
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/b232e622-ecfc-4d6c-bd9c-99a3b31c8d95)
+
 
 
 
@@ -129,9 +212,41 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
 
+int main()
+{
+    char c1[100], c2[100];
+    int i = 0, flag = 0;
+    printf("Enter first string: ");
+    scanf("%[^\n]", c1);
+    getchar();
+    printf("Enter second string: ");
+    scanf("%s", c2);
+    
+    for(i = 0; c1[i] != '\0' || c2[i] != '\0'; i++)
+    {
+        if(c1[i] != c2[i])
+        {
+            flag = 1;
+            break;
+        }
+    }
+    
+    if(flag == 0)
+        printf("Strings are same");
+    else
+        printf("Strings are not same");
+
+    return 0;
+}
+
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/4b22227d-3d88-4e6e-b93a-87287f2cf16d)
+
  
 
 ## RESULT
