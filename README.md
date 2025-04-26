@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3834f1f8-8174-494e-9479-7e88b15eb4bd)# EX-16-LEFT-SHIFT-OPERATION
+# EX-16-LEFT-SHIFT-OPERATION
 ## AIM
 To write a C Program to perform the basic left shift operation for 44 integer number with 3 shifts.
 
